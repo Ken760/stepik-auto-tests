@@ -1,7 +1,8 @@
 import os
 from selenium import webdriver
 
-browser = webdriver.Chrome()
+path = r'C:\Users\Ken\PycharmProjects\stepik-auto-tests\chromedriver.exe'
+browser = webdriver.Chrome(executable_path=path)
 browser.get('http://suninjuly.github.io/file_input.html')
 
 file_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data.txt')
